@@ -5,7 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
-import com.happstudio.cropimage.ui.MainNavigation
+import com.happstudio.cropimage.ui.navigate.MainNavigation
 import com.happstudio.cropimage.ui.theme.CropImageTheme
 
 class MainActivity : ComponentActivity() {

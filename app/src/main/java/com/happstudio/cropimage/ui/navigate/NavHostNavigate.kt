@@ -1,4 +1,4 @@
-package com.happstudio.cropimage.ui
+package com.happstudio.cropimage.ui.navigate
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavGraph.Companion.findStartDestination
@@ -8,6 +8,9 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.happstudio.cropimage.MainViewModel
+import com.happstudio.cropimage.ui.CompleteScreen
+import com.happstudio.cropimage.ui.CropScreen
+import com.happstudio.cropimage.ui.HomeScreen
 
 sealed class Screen(val route: String) {
     data object Home : Screen("Home")

@@ -1,4 +1,4 @@
-package com.happstudio.cropimage.ui
+package com.happstudio.cropimage.ui.utils
 
 import android.content.ContentResolver
 import android.content.Context

@@ -36,7 +36,7 @@ import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.happstudio.cropimage.MainViewModel
 import com.happstudio.cropimage.compose.ErrorDialog
-import com.happstudio.cropimage.createImageFromOldUri
+import com.happstudio.cropimage.ui.utils.createImageFromOldUri
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

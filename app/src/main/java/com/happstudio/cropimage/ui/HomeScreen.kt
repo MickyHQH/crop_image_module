@@ -23,7 +23,6 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.CompositionLocal
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -42,9 +41,10 @@ import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.isGranted
 import com.google.accompanist.permissions.rememberPermissionState
 import com.happstudio.cropimage.MainViewModel
-import com.happstudio.cropimage.bitmapToFileProvider
 import com.happstudio.cropimage.compose.ErrorDialog
 import com.happstudio.cropimage.ui.theme.CropImageTheme
+import com.happstudio.cropimage.ui.utils.ImageOrientation
+import com.happstudio.cropimage.ui.utils.bitmapToFileProvider
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

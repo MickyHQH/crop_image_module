@@ -14,8 +14,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowLeft
-import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
-import androidx.compose.material.icons.filled.Face
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.Icon
@@ -44,9 +42,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.happstudio.cropimage.MainViewModel
 import com.happstudio.cropimage.R
-import com.happstudio.cropimage.bitmapToFileProvider
 import com.happstudio.cropimage.compose.ErrorDialog
 import com.happstudio.cropimage.compose.LoadingDialog
+import com.happstudio.cropimage.ui.utils.ImageOrientation
+import com.happstudio.cropimage.ui.utils.bitmapToFileProvider
 import com.smarttoolfactory.cropper.ImageCropper
 import com.smarttoolfactory.cropper.model.OutlineType
 import com.smarttoolfactory.cropper.model.RectCropShape
@@ -129,10 +128,6 @@ fun CropScreen(
                         modifier = Modifier.aspectRatio(bmWidth / bmHeight),
                         imageBitmap = imageBitmap,
                         contentDescription = "Image Cropper",
-//                        cropStyle = CropDefaults.style(
-//                            drawGrid = false,
-//                            overlayColor = Color.White,
-//                        ),
                         cropProperties = CropDefaults.properties(
                             contentScale = ContentScale.Fit,
                             aspectRatio = aspectRatios[4].aspectRatio,
